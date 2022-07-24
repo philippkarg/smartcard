@@ -7,8 +7,16 @@ on:
     branches: [ "main" ]
 
 jobs:
+  doxygen:
+    runs-on: ubuntu-latest
+    run:    |
+            sudo apt-get update
+            sudo apt-get install graphviz doxygen
+    shell: bash
+  
   build:
     uses: philippkarg/smartcard/.github/workflows/build.yml@main
+    needs: [doxygen]
   
   deploy-pages:
     # The CMake configure and build commands are platform agnostic and should work equally well on Windows or Mac.
@@ -19,12 +27,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Install Doxygen
-      run:    |
-              sudo apt-get update
-              sudo apt-get install graphviz doxygen
-      shell: bash
 
     - name: Deploy Pages
       uses: peaceiris/actions-gh-pages@v3

@@ -21,9 +21,9 @@ on:
     - cron: '17 15 * * 4'
 
 jobs:
-build:
+  build:
     uses: philippkarg/smartcard/.github/workflows/build.yml@main
-analyze:
+  analyze:
     name: Analyze
     needs: [build]
     runs-on: ubuntu-latest
