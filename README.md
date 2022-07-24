@@ -79,5 +79,5 @@ The AES implementation contains a number of DPA countermeasures, including Maski
 	- Run `$ cmake -DDummyOps=OFF` to disable Dummy-Ops.
 	- The default value is `OFF`.
 
-## Credits:
+## Credits
 The Doxygen custom CSS template used in this project can be found <a href="https://github.com/jothepro/doxygen-awesome-css" target="_blank">here</a>.

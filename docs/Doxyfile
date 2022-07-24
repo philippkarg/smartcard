@@ -5,11 +5,12 @@ HTML_EXTRA_STYLESHEET  = @PROJECT_SOURCE_DIR@/docs/custom-doxygen.css
 
 # Directory to store html/ folder in
 OUTPUT_DIRECTORY = @PROJECT_SOURCE_DIR@/docs/
+
 # Directory to get header files from
-INPUT 					= @PROJECT_SOURCE_DIR@/docs @PROJECT_SOURCE_DIR@/include @PROJECT_SOURCE_DIR@/docs/README.md
+INPUT 					= @PROJECT_SOURCE_DIR@/docs @PROJECT_SOURCE_DIR@/include @PROJECT_SOURCE_DIR@/docs/mainpage.md
 BUILTIN_STL_SUPPORT		= NO
 GENERATE_LATEX 			= NO
-USE_MDFILE_AS_MAINPAGE	= README.md
+USE_MDFILE_AS_MAINPAGE	= mainpage.md
 RECURSIVE 				= YES
 EXCLUDE_PATTERNS 		= */version.h */*.cpp */*.c */*test* */*/references/*
 FULL_PATH_NAMES 		= NO
