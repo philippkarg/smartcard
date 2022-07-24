@@ -1,0 +1,4 @@
+<map id="Communication" name="Communication">
+<area shape="rect" id="node1" title="Class that implements the communication protocol between the SmartCard &amp; the Terminal." alt="" coords="5,219,196,619"/>
+<area shape="rect" id="node2" href="$classLogger.html" title="Logger class that outputs logs over USART." alt="" coords="38,5,163,156"/>
+</map>
