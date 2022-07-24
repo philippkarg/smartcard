@@ -1,18 +1,13 @@
 # ATmega644 Smart-Card running AES decryption
 
-- [Introduction](#introduction)
-- [Project Overview](#project-overview)
-- [Build Configurations](#build-configurations)
-    - [Prerequisites](#prerequisites)
-    - [Building the Project](#building-the-project)
-    - [Debug Mode](#debug-mode)
-    - [Countermeasures](#countermeasures)
-- [Credits:](#credits)
+[TOC]
 
 ## Introduction
 
 This repository contains an 128-bit AES decryption algorithm, that runs on a Smart-Card with an AVR ATmega644 microcontroller on it. The code was implemented in the scope of a "Smart-Card Laboratory" at the Technical University of Munich, with the purpose to decrypt chunks of a video stream while communicating with a Smart-Card reader or Terminal. The communication between the Smart-Card an the Terminal occurs over the Smart-Card's ISO7816 I/O contact and follows the *T=0* protocol specified in ISO7816. This markdown page provides some information on build configurations & gives an overview of the code.
 
+
+---
 ## Project Overview
 
 The code for the clone consists of these main classes:
@@ -25,6 +20,7 @@ The code for the clone consists of these main classes:
 - The `RNG` class implements a small, lightweight Random-Number-Generator.
 - The `Logger` class can be used to log message to a serial console over USART & USB. Note that this functionality is only available in *debug mode*.
 
+---
 ## Build Configurations
 
 ### Prerequisites
@@ -79,5 +75,6 @@ The AES implementation contains a number of DPA countermeasures, including Maski
 	- Run `$ cmake -DDummyOps=OFF` to disable Dummy-Ops.
 	- The default value is `OFF`.
 
-## Credits:
+---
+## Credits
 The Doxygen custom CSS template used in this project can be found <a href="https://github.com/jothepro/doxygen-awesome-css" target="_blank">here</a>.

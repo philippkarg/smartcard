@@ -58,10 +58,6 @@ public:
      */
     void decrypt(uint8_t *cipher);
     
-    #if defined(SHUFFLING) || defined(DUMMY_OPS)
-    void aesWithShuffling();
-    #endif
-    
 private:
     // *******************************************************************************
     // Private Attributes ************************************************************
