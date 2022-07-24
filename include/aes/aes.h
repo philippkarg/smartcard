@@ -1,7 +1,7 @@
 /**
  * @file aes.h
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @brief File containing the AES class.
  * @date 23.05.2022
@@ -37,7 +37,7 @@
  * 
  * If MASKING is defined, the class also provides functionality for masking and unmasking AES-decryption.
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @date 23.05.2022
  * @copyright Philipp Karg 2022

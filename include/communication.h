@@ -1,7 +1,7 @@
 /**
  * @file communication.h
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @brief File containing the Communication class.
  * @date 05.06.2022
@@ -37,7 +37,7 @@ enum class PinDir
 /**
  * @brief Class that implements the communication protocol between the SmartCard & the Terminal.
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @date 05.06.2022
  * @copyright Philipp Karg 2022
@@ -92,7 +92,7 @@ private:
     /**
      * @brief Class that provides functionality for the ATmega644's on-board 16-bit timer, such as an ISR.
      * 
-     * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+     * @authors Philipp Karg (philipp.karg@tum.de)
      * 
      * @date 05.06.2022
      * @copyright Philipp Karg 2022
@@ -156,7 +156,7 @@ private:
     /**
      * @brief Class that provides functionality for the ATmega644's PinB6, such as an ISR.
      * 
-     * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+     * @authors Philipp Karg (philipp.karg@tum.de)
      * 
      * @date 05.06.2022
      * @copyright Philipp Karg 2022

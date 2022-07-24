@@ -1,7 +1,7 @@
 /**
  * @file masking.h
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @brief File containing the Masking class.
  * @date 28.06.2022
@@ -28,7 +28,7 @@
  * in their book "Power Analysis Attacks: Revealing the Secrets of Smart Cards".
  * The implementation presented on pp. 228 ff. for encryption was adjusted to fit the decryption that was implemented here.
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @date 28.06.2022
  * @copyright Philipp Karg 2022

@@ -8,30 +8,19 @@ void Masking::init()
     mRNG.seed();
     // Compute SubBytes mask
     mSubByteMask.input = mRNG.rand();
-
-    // When recording DPA traces, reduce the number of random masks to make DPA easier.
-    #ifdef DPA
-    mSubByteMask.output = mSubByteMask.input;
-    // Compute MixCols masks
-    for(uint8_t i = 0; i < 4; i++)
-    {
-        mMixColMasks[i].output = mSubByteMask.input;
-        mMixColMasks[i].input = 0;
-    }
-    #else
     mSubByteMask.output = mRNG.rand();
+    // Init S-Box
+    initInvMaskedSBox(mInvMaskedSBox, mSubByteMask);
+
     // Compute MixCols masks
     for(uint8_t i = 0; i < 4; i++)
     {
         mMixColMasks[i].output = mRNG.rand();
         mMixColMasks[i].input = 0;
     }
-    #endif
-
-    // Init S-Box
-    initInvMaskedSBox(mInvMaskedSBox, mSubByteMask);
-
     initMixColInputMask(mMixColMasks);
+
+
 }
 
 void Masking::maskSubKeys(const sub_keys_t subKeys, sub_keys_t maskedSubKeys) const

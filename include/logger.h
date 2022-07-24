@@ -1,7 +1,7 @@
 /**
  * @file logger.h
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @brief File containing a Logger class using UART.
  * @date 02.06.2022
@@ -18,7 +18,7 @@
 /**
  * @brief Logger class that outputs logs over USART.
  *
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @date 02.06.2022
  * @copyright Philipp Karg 2022

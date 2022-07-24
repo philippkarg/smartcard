@@ -1,7 +1,7 @@
 /**
  * @file aesMath.h
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @brief File containing the AESMath class.
  * @date 02.07.2022
@@ -16,7 +16,7 @@
 /**
  * @brief Class providing some mathematical functions needed for AES.
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @date 02.07.2022
  * @copyright Philipp Karg 2022

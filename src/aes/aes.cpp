@@ -113,8 +113,7 @@ void AES::createKeySchedule(const aes_key_t masterKey, sub_keys_t subKeys) const
 void AES::addRoundKey(const aes_key_t roundKey, state_t state)
 {
     // Perform some NOPs before the actual operation
-    // In case of DPA dummy ops are only performed before the S-Box accesses, to make DPA easier.
-    #if defined(DUMMY_OPS) && !defined(DPA)
+    #if defined(DUMMY_OPS)
     mHiding.dummyOp();
     #endif
 
@@ -130,8 +129,7 @@ void AES::addRoundKey(const aes_key_t roundKey, state_t state)
 void AES::invMixCols(state_t state)
 {
     // Perform some NOPs before the actual operation
-    // In case of DPA dummy ops are only performed before the S-Box accesses, to make DPA easier.
-    #if defined(DUMMY_OPS) && !defined(DPA)
+    #if defined(DUMMY_OPS)
     mHiding.dummyOp();
     #endif
 
@@ -148,8 +146,7 @@ void AES::invMixCols(state_t state)
 void AES::invShiftRows(state_t state)
 {
     // Perform some NOPs before the actual operation
-    // In case of DPA dummy ops are only performed before the S-Box accesses, to make DPA easier.
-    #if defined(DUMMY_OPS) && !defined(DPA)
+    #if defined(DUMMY_OPS)
     mHiding.dummyOp();
     #endif
 

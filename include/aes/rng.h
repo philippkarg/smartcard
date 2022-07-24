@@ -1,7 +1,7 @@
 /**
  * @file rng.h
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @brief File that contains the RNG class.
  * @date 23.06.2022
@@ -18,7 +18,7 @@
  * @brief Class that provides a random number generator. 
  * The RNG can be seeded by reading noise from an unused ADC.
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @date 23.06.2022
  * @copyright Philipp Karg 2022

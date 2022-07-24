@@ -54,7 +54,7 @@ To see a complete list of them, run: `$ cmake -L ..` from you build folder.
 
 ### Debug Mode
 
-The Smart-Card used in this laboratory came with an USART to USB converter chip. This makes it possible to log messages to a serial console on a PC over the ATmega644's USART peripheral. If you are running compiling this code for another Smart-Card, you might run into issues with USART.
+The Smart-Card used in this laboratory came with an USART to USB converter chip. This makes it possible to log messages to a serial console on a PC over the ATmega644's USART peripheral. If you are compiling this code for your own Smart-Card, you might run into issues with USART.
 To enable logging of debug messages, the project can be compiled in *debug mode*. Note that this greatly increases the executable size & that some UART message might interfere with the Terminal communication. If these message are unwanted, the project can also be compiled in *release mode*.
 
 - Run `$ cmake -DDebug=ON ..` to build the project in *debug mode*.

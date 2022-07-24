@@ -1,7 +1,7 @@
 /**
  * @file hiding.h
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @brief File that contains the Hiding class.
  * @date 04.07.2022
@@ -23,7 +23,7 @@
  * the timing behaviour of the AES en-/decryption.
  * This can be done by adding random dummy-ops or by randomly shuffling the S-Box access.
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @date 04.07.2022
  * @copyright Philipp Karg 2022

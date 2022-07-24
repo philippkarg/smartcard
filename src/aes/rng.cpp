@@ -13,14 +13,9 @@ void RNG::init()
 
 void RNG::seed()
 {
-    // When recording traces for DPA, the RNG is seeded with 1 to make DPA easier.
-    #ifdef DPA
-    mRand = 1;
-    #else
     mRand = 0;
     for(uint8_t i=0; i<8; i++)      // Seed the RNG
         mRand |= (readADC() << i);
-    #endif
 }
 
 uint8_t RNG::rand()

@@ -1,7 +1,7 @@
 /**
  * @file defs.h
  * 
- * @authors Philipp Karg (philipp.karg@tum.de/ge49bov)
+ * @authors Philipp Karg (philipp.karg@tum.de)
  * 
  * @brief Some macros and type definitions.
  * @date 02.06.2022
