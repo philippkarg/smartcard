@@ -21,11 +21,8 @@ on:
     - cron: '17 15 * * 4'
 
 jobs:
-  build:
-    uses: philippkarg/smartcard/.github/workflows/build.yml@main
   analyze:
     name: Analyze
-    needs: [build]
     runs-on: ubuntu-latest
     permissions:
       actions: read
@@ -58,6 +55,22 @@ jobs:
         
     # Autobuild attempts to build any compiled languages  (C/C++, C#, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
+    - name: Install AVR Toolchain
+      run:    |
+              sudo apt-get update
+              sudo apt-get install gcc-avr binutils-avr avr-libc gdb-avr avrdude
+      shell: bash
+
+    - name: Build
+      # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
+      # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+      run:  |
+            mkdir ${{github.workspace}}/build
+            cd ${{github.workspace}}/build
+            cmake ..
+            make
+      shell: bash
+
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
 
