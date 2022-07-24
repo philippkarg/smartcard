@@ -1,7 +1,7 @@
 name: Build Application
 
 on:
-  workflow-call:
+  workflow_call:
 
 jobs:
   build:
