@@ -1,0 +1,10 @@
+# CMake
+build/
+
+# Doxygen
+docs/html/
+docs/index.html
+
+# Python
+venv/
+*/venv/
