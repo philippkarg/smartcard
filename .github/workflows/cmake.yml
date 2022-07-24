@@ -1,4 +1,4 @@
-name: CMake
+name: Build Application
 
 on:
   push:
@@ -18,14 +18,14 @@ jobs:
 
     - name: Install AVR Toolchain
       run:    |
-              sudo apt update
-              sudo apt install gcc-avr binutils-avr avr-libc gdb-avr avrdude
+              sudo apt-get update
+              sudo apt-get install gcc-avr binutils-avr avr-libc gdb-avr avrdude
       shell: bash
 
     - name: Install Doxygen
       run:    |
-              sudo apt update
-              sudo apt install graphviz doxygen
+              sudo apt-get update
+              sudo apt-get install graphviz doxygen
       shell: bash
 
     - name: Build
@@ -38,7 +38,7 @@ jobs:
             make
       shell: bash
 
-    - name: Deploy
+    - name: Deploy Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
