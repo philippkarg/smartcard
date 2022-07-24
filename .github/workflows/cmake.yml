@@ -22,16 +22,13 @@ jobs:
               sudo apt install gcc-avr binutils-avr avr-libc gdb-avr avrdude
       shell: bash
 
-    - name: Configure CMake
+    - name: Build
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
       # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
       run:  |
-            mkdir build
-            cd build
+            mkdir ${{github.workspace}}/build
+            cd ${{github.workspace}}/build
             cmake ..
+            make
       shell: bash
-
-    - name: Build
-      # Build your program with the given configuration
-      run:  make
-      shell: bash
+      
