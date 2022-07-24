@@ -25,7 +25,7 @@ jobs:
     - name: Install Doxygen
       run:    |
               sudo apt update
-              sudo apt install doxygen
+              sudo apt install graphviz doxygen
       shell: bash
 
     - name: Build
