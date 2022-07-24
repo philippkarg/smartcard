@@ -35,12 +35,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Configure CMake
-        run: cmake -B ${{ env.build }}
+      - name: Install AVR Toolchain
+        run:  |
+              sudo apt-get update
+              sudo apt-get install gcc-avr binutils-avr avr-libc gdb-avr avrdude
+        shell: bash
 
-      # Build is not required unless generated source files are used
-      # - name: Build CMake
-      #   run: cmake --build ${{ env.build }}
+      - name: Build
+        # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
+        # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+        run:  |
+              mkdir ${{github.workspace}}/build
+              cd ${{github.workspace}}/build
+              cmake ..
+              make
+        shell: bash
 
       - name: Initialize MSVC Code Analysis
         uses: microsoft/msvc-code-analysis-action@04825f6d9e00f87422d6bf04e1a38b1f3ed60d99
