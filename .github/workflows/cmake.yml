@@ -22,6 +22,12 @@ jobs:
               sudo apt install gcc-avr binutils-avr avr-libc gdb-avr avrdude
       shell: bash
 
+    - name: Install Doxygen
+      run:    |
+              sudo apt update
+              sudo apt install doxygen
+      shell: bash
+
     - name: Build
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
       # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
