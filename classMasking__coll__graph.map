@@ -1,6 +1,0 @@
-<map id="Masking" name="Masking">
-<area shape="rect" id="node1" title="Masking class that provides functionality for masking and unmasking AES&#45;decryption." alt="" coords="109,233,315,428"/>
-<area shape="rect" id="node2" href="$structMasking_1_1mask__t.html" title="Structure for masks. Masks always come in pairs, with an input &amp; output mask." alt="" coords="5,35,139,127"/>
-<area shape="rect" id="node3" href="$classRNG.html" title="Class that provides a random number generator. The RNG can be seeded by reading noise from an unused ..." alt="" coords="163,13,261,149"/>
-<area shape="rect" id="node4" href="$classLogger.html" title="Logger class that outputs logs over USART." alt="" coords="285,5,411,156"/>
-</map>
