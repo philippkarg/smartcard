@@ -23,7 +23,7 @@ jobs:
       shell: bash
 
     - name: Build
-      uses: ${{github.workspace}}/.github/workflows/build.yml@main
+      uses: philippkarg/smartcard/.github/workflows/build.yml@main
 
     - name: Deploy Pages
       uses: peaceiris/actions-gh-pages@v3
