@@ -9,10 +9,11 @@ on:
 jobs:
   doxygen:
     runs-on: ubuntu-latest
-    run:    |
+    steps:
+    - run:  |
             sudo apt-get update
             sudo apt-get install graphviz doxygen
-    shell: bash
+      shell: bash
   
   build:
     uses: philippkarg/smartcard/.github/workflows/build.yml@main
