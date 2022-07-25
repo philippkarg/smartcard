@@ -30,7 +30,7 @@ The code for the clone consists of these main classes:
 ### Prerequisites
 
 - This project uses CMake and requires Version *3.5* or higher.
-
+- To compile, you need to install the AVR Toolchain, e.g. on Debian: `sudo apt-get install gcc-avr binutils-avr avr-libc gdb-avr`
 - If you want to flash the executable onto an ATmega644 yourself, make sure to install `avrdude` (e.g. on Debian: `sudo apt-get install avrdude`)
 
 
