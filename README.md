@@ -1,4 +1,9 @@
 # ATmega644 Smart-Card running AES decryption
+![Build Status Badge](https://img.shields.io/github/workflow/status/philippkarg/smartcard/Deploy%20Doxygen%20to%20Github%20Pages)
+![CodeQL Status Badge](https://img.shields.io/github/workflow/status/philippkarg/smartcard/CodeQL?label=CodeQL)
+![License Badge](https://img.shields.io/github/license/philippkarg/smartcard)
+![Top Language Badge](https://img.shields.io/github/languages/top/philippkarg/smartcard)
+![Lines of Code Badge](https://img.shields.io/tokei/lines/github.com/philippkarg/smartcard?label=Lines%20of%20Code)
 
 - [Introduction](#introduction)
 - [Project Overview](#project-overview)
@@ -30,7 +35,7 @@ The code for the clone consists of these main classes:
 ### Prerequisites
 
 - This project uses CMake and requires Version *3.5* or higher.
-- To compile, you need to install the AVR Toolchain, e.g. on Debian: `sudo apt-get install gcc-avr binutils-avr avr-libc gdb-avr`
+
 - If you want to flash the executable onto an ATmega644 yourself, make sure to install `avrdude` (e.g. on Debian: `sudo apt-get install avrdude`)
 
 
