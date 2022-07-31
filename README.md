@@ -3,8 +3,7 @@
 ![CodeQL Status Badge](https://img.shields.io/github/workflow/status/philippkarg/smartcard/CodeQL?label=CodeQL)
 ![License Badge](https://img.shields.io/github/license/philippkarg/smartcard)
 ![Top Language Badge](https://img.shields.io/github/languages/top/philippkarg/smartcard)
-![Lines of Code Badge](https://img.shields.io/tokei/lines/github.com/philippkarg/smartcard?label=Lines%20of%20Code)
-
+![Lines Of Code Badge](https://tokei.rs/b1/github/philippkarg/smartcard)
 - [Introduction](#introduction)
 - [Project Overview](#project-overview)
 - [Build Configurations](#build-configurations)
